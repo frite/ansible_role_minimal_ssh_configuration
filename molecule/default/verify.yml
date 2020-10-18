@@ -9,8 +9,7 @@
 
     - name: Ensure ssh is running
       assert:
-        that: (ansible_facts.services.ssh is defined) and
-        (ansible_facts.services.ssh.state == 'running')
+        that: (ansible_facts.services.ssh is defined) and (ansible_facts.services.ssh.state == 'running')
 
     - name: Ensure SSH Settings are proper
       lineinfile:
