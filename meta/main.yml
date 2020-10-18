@@ -1,0 +1,20 @@
+galaxy_info:
+  author: Manolis M.
+  role_name: minimal_ssh_config
+  description: Minimal SSH configuration
+  company: NaN
+
+  license: MIT
+
+  min_ansible_version: 2.9
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - focal
+  galaxy_tags:
+    - security
+    - ubuntu
+    - systems
+    - ssh
+  dependencies: []
