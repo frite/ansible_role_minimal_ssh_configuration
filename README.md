@@ -29,7 +29,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - { role: frite.ansible_ssh }
+         - { role: frite.minimal_ssh_config }
 
 License
 -------
@@ -37,4 +37,4 @@ MIT
 
 Author Information
 ------------------
-Manolis M. 
+Manolis M.
