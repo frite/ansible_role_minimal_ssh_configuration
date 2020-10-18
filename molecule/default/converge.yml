@@ -4,4 +4,4 @@
   tasks:
     - name: "Include ansible_role_ssh"
       include_role:
-        name: "ansible_role_minimal_ssh"
+        name: "ansible_role_minimal_ssh_configuration"
