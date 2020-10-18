@@ -1,0 +1,10 @@
+---
+sshd_service_name: ssh
+sshd_enabled: true
+sshd_package_name: openssh-server
+
+sshd_settings:
+  "PasswordAuthentication": "no"
+  "PermitRootLogin": "no"
+  "PermitTunnel": "no"
+  "Port": "22"

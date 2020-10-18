@@ -1,0 +1,22 @@
+---
+- name: Install openssh server
+  apt:
+    state: present
+    pkg: "{{ sshd_package_name }}"
+    update_cache: true
+
+- name: Ensure sshd_config settings
+  lineinfile:
+    dest: /etc/ssh/sshd_config
+    regexp: "^{{ item }}"
+    line: "{{ item }} {{ sshd_settings[item] }}"
+    state: present
+  notify: restart sshd
+  with_items:
+    - "{{ sshd_settings | list }}"
+
+- name: Start ssh
+  service:
+    name: "{{ sshd_service_name }}"
+    state: started
+    enabled: true
