@@ -1,4 +1,4 @@
-Role Name
+minimal_ssh_config
 =========
 
 Minimal SSH hardening for Ubuntu.
